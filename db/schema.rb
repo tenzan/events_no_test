@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 20161123132756) do
     t.string   "name"
     t.string   "location"
     t.decimal  "price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.datetime "starts_at"
-    t.text     "decription"
+    t.text     "description"
   end
 
 end
