@@ -1,9 +1,9 @@
 module EventsHelper
   def format_price(event)
-    if event.price == 0
-      "Free"
+    if event.free?
+      content_tag(:strong, "Free!")
     else
-      number_to_currency(event_price)
+      number_to_currency(event.price)
     end
   end
 end
